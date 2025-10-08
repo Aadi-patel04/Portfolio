@@ -5,8 +5,8 @@ export default function Navbar() {
   return (
     <nav className="flex justify-between items-center px-8 md:px-16 py-6 bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
       <div className="text-lg font-extrabold">
-        Maya Nelson{" "}
-        <span className="text-gray-500 font-medium ml-2">/ PROJECT MANAGER</span>
+        Aditya Patel{" "}
+        <span className="text-gray-500 font-medium ml-2">/ CSE </span>
       </div>
 
       <ul className="hidden md:flex space-x-8 text-sm font-medium">

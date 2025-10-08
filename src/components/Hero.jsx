@@ -12,8 +12,8 @@ export default function Hero() {
             alt="Profile"
             className="w-36 h-36 md:w-40 md:h-40 rounded-full object-cover mx-auto mb-6"
           />
-          <h2 className="text-xl font-extrabold">Maya Nelson</h2>
-          <p className="text-gray-600 tracking-widest mt-3 text-sm">PROJECT MANAGER</p>
+          <h2 className="text-xl font-extrabold">Aditya Patel </h2>
+          <p className="text-gray-600 tracking-widest mt-3 text-sm">CSE</p>
         </div>
       </div>
 
