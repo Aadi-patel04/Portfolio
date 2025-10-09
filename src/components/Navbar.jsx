@@ -10,8 +10,9 @@ export default function Navbar() {
       </div>
 
       <ul className="hidden md:flex space-x-8 text-sm font-medium">
-        <li><Link to="/" className="hover:text-blue-600">HOME</Link></li>
-        <li><Link to="/about" className="hover:text-blue-600">ABOUT ME</Link></li>
+        <li><Link to="/" className="hover:text-blue-600">ABOUT ME</Link></li>
+        {/* <li><Link to="/about" className="hover:text-blue-600">ABOUT ME</Link></li> */}
+        <li><Link to="/about" className="hover:text-blue-600">RESUME</Link></li>
         <li><Link to="/projects" className="hover:text-blue-600">PROJECTS</Link></li>
         <li><Link to="/contact" className="hover:text-blue-600">CONTACT</Link></li>
       </ul>

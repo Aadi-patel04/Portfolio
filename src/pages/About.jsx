@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function App() {
+export default function About() {
   return (
     <div className="relative flex min-h-screen font-sans" id="main">
       {/* LEFT SECTION */}
