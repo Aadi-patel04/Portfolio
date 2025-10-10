@@ -45,9 +45,6 @@ export default function About() {
         <p className="text-gray-500 uppercase tracking-wide mt-2">
           CSE
         </p>
-<footer className="absolute  bottom-0 left-0 w-full mt-10 bg-white h-[12%] text-center">
-  HI
-</footer>
 
       </div>
     </div>
