@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import profilePic from "../assets/portfolio.jpg";
 
 export default function About() {
   return (
     <div className="relative flex min-h-screen font-sans" id="main">
       {/* LEFT SECTION */}
-      <div className="bg-yellow-50 flex-none w-[35rem] h-[90rem] p-6"></div>
+      <div className="bg-yellow-50 flex-none w-full md:w-[35rem] h-14 md:h-[90rem] p-6"></div>
 
       {/* RIGHT SECTION */}
-      <div className="bg-white flex flex-col justify-center w-full md:w-1/2 p-10 h-[70rem] ml-[14rem]">
+      <div className="bg-white flex flex-col justify-center w-full md:w-1/2 p-6 md:p-10 h-auto md:h-[70rem] ml-0 md:ml-[14rem]">
         <h1 className="text-6xl font-extrabold text-gray-900 mb-4">Hello</h1>
         <p className="text-lg md:text-xl text-gray-700 font-semibold mb-4 tracking-tight">Here's who I am &amp; what I do</p>
         <p className="text-xl text-gray-700 mb-8">
@@ -35,18 +36,17 @@ export default function About() {
         </p>
       </div>
 
-      {/* Profile Card (Floating on top) */}
-      <div className="absolute top-[40%] left-[36rem] transform -translate-x-1/2 -translate-y-1/2 bg-yellow-50 shadow-2xl  p-8 text-center h-[33rem] w-[23rem] z-10 ">
-        <img
-          src="src/assets/portfolio.jpg"
-          alt="Profile"
-          className="w-36 h-36 rounded-full mx-auto mb-6 object-cover mt-20"
-        />
-        <h2 className="text-2xl font-bold text-gray-800">Aditya Patel </h2>
-        <p className="text-gray-500 uppercase tracking-wide mt-2">
-          CSE
-        </p>
-
+      {/* Profile Card (Floating on top on desktop, centered on mobile) */}
+      <div className="relative md:absolute md:top-[40%] md:left-[36rem] md:transform md:-translate-x-1/2 md:-translate-y-1/2 flex justify-center">
+        <div className="bg-yellow-50 shadow-2xl p-6 text-center md:p-8 h-auto md:h-[33rem] w-full max-w-sm md:w-[23rem] rounded-xl z-10 mx-4 md:mx-0">
+          <img
+            src={profilePic}
+            alt="Profile"
+            className="w-20 h-20 md:w-36 md:h-36 rounded-full mx-auto mb-4 md:mb-6 object-cover mt-2 md:mt-20"
+          />
+          <h2 className="text-xl md:text-2xl font-bold text-gray-800">Aditya Patel</h2>
+          <p className="text-gray-500 uppercase tracking-wide mt-1">CSE</p>
+        </div>
       </div>
     </div>
   );
