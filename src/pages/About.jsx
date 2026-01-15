@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -9,28 +10,28 @@ export default function About() {
       {/* RIGHT SECTION */}
       <div className="bg-white flex flex-col justify-center w-full md:w-1/2 p-10 h-[70rem] ml-[14rem]">
         <h1 className="text-6xl font-extrabold text-gray-900 mb-4">Hello</h1>
+        <p className="text-lg md:text-xl text-gray-700 font-semibold mb-4 tracking-tight">Here's who I am &amp; what I do</p>
         <p className="text-xl text-gray-700 mb-8">
-          Here's who I am & what I do
+          Full-stack developer experienced in React, Next.js, Node.js and MongoDB. I build
+          scalable web applications, RESTful APIs, and responsive user interfaces.
         </p>
 
         <div className="flex gap-4 mb-8">
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+          <Link to="/resume" className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
             Resume
-          </button>
-          <button className="border border-gray-400 px-6 py-2 rounded-full hover:bg-gray-100 transition">
+          </Link>
+          <Link to="/projects" className="border border-gray-400 px-6 py-2 rounded-full hover:bg-gray-100 transition">
             Projects
-          </button>
+          </Link>
         </div>
 
         <p className="text-gray-500 max-w-md text-sm leading-relaxed">
-          I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-          Just click “Edit Text” or double click me to add your own content and
-          make changes to the font.
+          I'm Aditya Patel, a Computer Science student focused on building practical
+          full-stack solutions and learning advanced algorithms and system design.
         </p>
-                <p className="text-gray-500 max-w-md text-sm leading-relaxed m-5">
-          I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-          Just click “Edit Text” or double click me to add your own content and
-          make changes to the font.
+        <p className="text-gray-500 max-w-md text-sm leading-relaxed mt-4">
+          I enjoy working on collaborative teams, contributing to open-source, and
+          delivering performant, maintainable code.
         </p>
       </div>
 
